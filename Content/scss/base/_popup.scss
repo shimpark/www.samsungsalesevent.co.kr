@@ -1,0 +1,177 @@
+.dimmed {
+    display: none;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba( 0, 0, 0, .7);
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 1001;
+    width: 100%;
+    text-align:center;
+    background: #fff;
+    font-family: $font-SamsungOne;
+
+    @include boxSizing( border-box);
+    @include translateX(-50%);
+    @include breakpoint(maxMobile){
+        max-width: 620px;
+    }
+
+    &-title {
+        text-align:center;
+        @include vw(padding, 60px 0);
+        @include breakpoint(maxMobile){
+            @include vw(padding, 30px 0);
+        }
+        strong{
+            @include vw(font-size, 44px);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0em;
+            text-align: center;
+            color: rgba(0, 43, 215, 1);
+            @include breakpoint(maxMobile){
+                font-size:30px;
+            }
+        }
+
+        p{
+            @include vw(margin-top, 20px);
+            @include vw(font-size,24px);
+            text-align: center;
+            color: #000000;
+            @include breakpoint(maxMobile){
+                margin-top:10px;
+            }
+        }
+
+    }
+
+    &-close {
+        position:absolute;right:0;top:0;z-index:3;
+        cursor: pointer;
+        @include closeButton(transparent, 24px, 4px, #000);
+    }
+}
+
+#popupPrivacy{
+    .scroll-box{
+        height:600px;overflow-y:auto;
+        @include vw(font-size, 24px);
+        @include vw(padding, 0 40px 40px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0em;
+        text-align: left;
+        @include breakpoint(maxMobile){
+            font-size:18px;
+        }
+    }
+}
+
+#popupSns{
+    padding: percent(80);
+    @include breakpoint(maxMobile){
+        padding:70px;
+    }
+
+    .sns-list{
+        @include rem(margin-top, 40px);
+        li{
+            margin-top:10px;
+            &:first-child{margin-top:0;}
+            a{display:block;}
+        }
+    }
+}
+
+#popupRequest{
+    .popup-cont{
+        text-align:left;
+        @include vw(padding, 0 40px 60px);
+
+        .form-list{
+            position:relative;
+            background: #F1F5F8;
+            border-radius: 5px;
+            display:flex;
+            align-items: center;
+            @include vw(margin-bottom, 20px);
+            .form-text{width:30%;text-align:center;margin-top:0;color: #002BD7; @include vw(font-size, 28px);}
+            .form-control{
+                .text{
+                    background: #F1F5F8;border-radius: 5px;text-align:left;color:#000;
+                    @include vw(padding, 34px 140px 34px 0);@include vw(font-size, 28px);
+                    &::placeholder{@include vw(font-size, 28px);color:#000;}
+                    
+                }
+            }
+            .form-btn{position:absolute;right:5%;top:50%;transform:translateY(-50%);color: #002BD7; @include vw(font-size, 28px);}
+        }
+        
+    }
+
+    .popup-btn{
+        background-color: #FBD800;
+        font-weight: 700;
+        @include vw(font-size,60px);
+        @include vw(padding,44px 0);
+        line-height: 1;
+        text-align: center;
+        color: #000000;
+        @include breakpoint(maxMobile){
+            font-size:40px;
+            padding: 30px 0;
+        }
+    }
+
+    
+
+    // .join-1{
+        
+    //     @include rem(padding, 0 50px 20px);
+    //     @include breakpoint(maxMobile){
+    //         padding:30px 50px 20px;
+    //     }
+
+    //     .form-list{margin-top:10px;margin-bottom:20px;}
+    // }
+
+    // .join-2{
+    //     padding: percent(60) percent(50);
+    //     @include breakpoint(maxMobile){
+    //         padding:60px 50px;
+    //     }
+    //     .form-list{
+    //         font-size:0;vertical-align:middle;
+    //         .form-text{ vertical-align:middle;display:inline-block;color:#010101;font-weight:700;width:25%;}
+    //         .form-control{vertical-align:middle;display:inline-block;width:75%;}
+
+    //     }
+    // }
+
+    // .popup-text{
+    //     font-weight:700;@include vw(font-size,23px);color:#5d5d5d;
+    //     @include breakpoint(maxMobile){
+    //         font-size:16px;
+    //     }
+
+    // }
+
+    .popup-apply{display:block;margin:20px auto 0;max-width:190px;}
+
+    
+}
+

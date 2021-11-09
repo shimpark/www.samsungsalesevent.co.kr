@@ -1,0 +1,28 @@
+
+#wrap{
+    #contents{
+        background-color:#fff;
+       
+    }
+
+
+    footer {
+        @include vw(padding, 30px 0);
+        background: rgba(0, 43, 215, 1);
+
+        .copyright,
+        a {
+            display:inline-block;
+            @include vw(font-size, 16px);
+            color:rgba(255, 255, 255, 1);
+           
+        }
+        .copyright{
+            @include breakpoint(desktop){
+               padding-right:10px;
+            }
+        }
+
+      
+    }
+}

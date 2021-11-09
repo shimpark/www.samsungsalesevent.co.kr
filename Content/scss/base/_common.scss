@@ -1,0 +1,265 @@
+#wrap {
+    line-height: 1.4;
+    font-family: $font-SamsungOne;
+
+    .wrap{
+        position:relative;
+        max-width: 750px;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .pc {
+        display:none;
+        @include breakpoint(desktop){
+            display: block;
+        }
+    }
+
+    .mobile {
+        display:block;
+        @include breakpoint(desktop){
+            display: none;
+        }
+    }
+                                
+    .text-left{text-align:left !important;}
+    .text-center{text-align:center !important;}
+    .notice{
+        color:#fff;margin-top:20px;@include vw(font-size, 26px);
+        @include breakpoint(maxMobile){font-size:18px;}
+    }
+
+    .color-pink{color:#ff797c;}
+    .color-blue{color:#0050ff;}
+    .bg-gray{background-color:#e2e2e2;}
+
+    .btn {
+        position: relative;
+        display: inline-block;
+        width: percent(560);
+        margin:0 auto;
+        @include vw(padding, 15px 0);
+        text-align: center;
+        @include vw(font-size, 28px);
+        font-weight: 500;
+        color:#222222;
+        @include boxSizing(border-box);
+        background-color:#f1f1f1;
+        border:2px solid #cdcdcd;
+        border-radius:10px;
+        &.active, &:hover{
+            background-color:#373737;
+            color:#fff;
+        }
+
+        @include breakpoint(maxMobile){
+            // width:auto;
+            // padding:20px 50px;
+            // font-size: 27px;
+            // border-width:1px;
+            // letter-spacing:-2px;
+        }
+    }
+
+    .table-row {
+        table {
+            tr:last-child {
+                th,
+                td { border-bottom: none; }
+            }
+            th,
+            td {
+                color:#1c1c1c;
+                @include vw(padding, 12px 0);
+                text-align:left;
+                @include vw(font-size, 24px);
+                word-break: break-all;
+                @include boxSizing(border-box);
+                @include breakpoint(maxMobile){
+                    font-size: 17px;
+                }
+            }
+            th {
+                width:30%;
+                vertical-align:top;
+                font-weight:700;
+                 @include vw(padding-left, 20px);
+                @include breakpoint(maxMobile){
+                    width:135px;
+                    @include vw(padding-left, 20px);
+                }
+            }
+        }
+    }
+
+    // .form-text {
+    //     @include vw(margin-top, 20px);
+    //     text-align:left;color:#000;
+    //     @include vw(font-size, 28px);
+    //     // @include vw(padding-bottom, 15px);
+    //     @include breakpoint(maxMobile){
+    //         font-size: 20px;
+    //     }
+    // }
+
+    .form-control {
+        display:block;
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            margin: 0;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="number"] { -moz-appearance: textfield; }
+
+        .select {
+            display: inline-block;
+            font-size: 0;
+            background: url('../img/common/bg_input.png') no-repeat 0 0;
+            background-size: cover;
+            border:none;
+            @include vw(width, 239px);
+            @include vw(height, 69px);
+            @include breakpoint(maxMobile){
+   
+            }
+
+            select {
+                background: url('../img/common/icon_select_arrow.png') no-repeat 90% center;
+                @include vw(background-size, 31px 19px);
+                width: 100%;
+                height:100%;
+                @include vw(font-size, 34px);
+                color:#0050ff;
+                font-weight:700;
+                @include vw(padding-left, 20px);
+                @include vw(padding-top, 10px);
+
+                -webkit-appearance: none;
+                appearance: none;
+                @include boxSizing(border-box);
+                &::-ms-expand { display: none; }
+                &::placeholder { color: #999; }
+                @include breakpoint(maxMobile){
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .text {
+            background-color:#fff;
+            border:none;
+            width:100%;
+            @include vw(font-size, 32px);
+            color:rgba(153, 153, 153, 1);
+            font-weight:400;
+            @include vw(padding, 48px 20px);
+            text-align:center;
+            &::placeholder{ color:rgba(153, 153, 153, 1);font-weight:400;@include vw(font-size, 32px); }
+            @include breakpoint(maxMobile){
+                @include vw(font-size, 28px);
+                &::placeholder{@include vw(font-size, 28px);}
+                @include vw(padding, 38px 20px);
+            }
+        }
+
+        .textarea {
+            width: 100%;
+            @include vw(height, 300px);
+            @include vw(padding, 28px 40px);
+            @include vw(font-size, 24px);
+            line-height:1.5;
+            @include vw(border-width, 2px);
+            border-style: solid;
+            border-color: #c0c0c0;
+            @include vw(border-radius, 5px);
+            resize: none;
+            @include boxSizing(border-box);
+            &::placeholder { color: #999; }
+            @include breakpoint(maxMobile){
+                height: 200px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-width: 1px;
+            }
+        }
+
+        .fake-checkbox {
+            label {
+                display: inline-block;
+                @include vw(padding-left, 60px);
+                background: url('../../Content/img/common/icon_checkbox_check.png') no-repeat left center;
+                background-size: auto 100%;
+                cursor: pointer;
+                @include vw(font-size, 36px);
+                font-weight:400;
+                @include breakpoint(maxMobile){
+                    @include vw(font-size, 28px);
+                }
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-image: url('../../Content/img/common/icon_checkbox_checked.png'); }
+            }
+        }
+        .fake-radio {
+            @include vw(margin-left, 10px);
+            &:first-child { margin-left: 0; }
+            label {
+                display: inline-block;
+                background-color:#fff;
+                cursor: pointer;color:#5d5d5d;font-weight:700;
+                width: 49%;text-align:center;
+                @include vw(padding, 28px 40px);
+                @include vw(font-size, 28px);
+                @include vw(border-width, 2px);
+                border-style: solid;
+                border-color: #c0c0c0;
+                @include vw(border-radius, 5px);
+                background: none;
+                @include boxSizing(border-box);
+                &::placeholder { color: #000; }
+                @include breakpoint(maxMobile){
+                    padding: 16px 20px;
+                    font-size: 18px;
+                    border-width: 1px;
+                    width: 48.5%;
+                }
+            }
+            input {
+                @extend .sr-only;
+                &:checked + label { background-color:#55738d;color:#fff; }
+            }
+        }
+    }
+
+    .form-terms {
+        @include vw(margin-bottom, 60px);
+        width: 100%;
+        background-color: #F1F5F8;
+        @include vw(height, 108px);
+        @include vw(padding, 20px);
+        text-align: left;
+        @include  vw(font-size, 20px);
+        color: #000;
+        @include vw(border-radius, 5px);
+        @include boxSizing(border-box);
+        overflow-y: auto;
+        @include  vw(margin-top, 10px);
+    }
+
+    .form-notice{ 
+        @include vw(margin, 20px 0);@include vw(font-size, 28px);line-height:1.4;color: #000000;
+        @include breakpoint(maxMobile){font-size:24px;}
+    }
+
+    .notice-list{
+        @include vw(margin-top, 40px);
+        li{
+            @include vw(font-size, 20px);line-height:1.4;color: #999999;
+            @include vw(padding-left, 18px);@include vw(text-indent, -18px);
+        }
+    }
+}
