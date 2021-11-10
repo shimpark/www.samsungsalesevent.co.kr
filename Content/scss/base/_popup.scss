@@ -101,6 +101,7 @@
     .popup-cont{
         text-align:left;
         @include vw(padding, 0 40px 60px);
+        font-family: $font-SamsungOne;
 
         .form-list{
             position:relative;
@@ -109,16 +110,30 @@
             display:flex;
             align-items: center;
             @include vw(margin-bottom, 20px);
-            .form-text{width:30%;text-align:center;margin-top:0;color: #002BD7; @include vw(font-size, 28px);}
+            .form-text{
+                width:30%;text-align:left;margin-top:0;color: #002BD7; @include vw(font-size, 28px); @include vw(padding-left, 40px);
+                @include breakpoint(maxMobile){
+                    padding-left:5%;
+                }
+            }
             .form-control{
                 .text{
                     background: #F1F5F8;border-radius: 5px;text-align:left;color:#000;
-                    @include vw(padding, 34px 140px 34px 0);@include vw(font-size, 28px);
-                    &::placeholder{@include vw(font-size, 28px);color:#000;}
+                    @include vw(padding, 34px 140px 34px 0);@include vw(font-size, 36px);
+                    &::placeholder{@include vw(font-size, 36px);color:#000;}
+                    @include breakpoint(maxMobile){
+                        @include vw(font-size, 32px);
+                        &::placeholder{@include vw(font-size, 32px);}
+                    }
                     
                 }
             }
-            .form-btn{position:absolute;right:5%;top:50%;transform:translateY(-50%);color: #002BD7; @include vw(font-size, 28px);}
+            .form-btn{
+                position:absolute;right:5%;top:50%;transform:translateY(-50%);color: #002BD7; @include vw(font-size, 36px);
+                @include breakpoint(maxMobile){
+                    @include vw(font-size, 32px);
+                }
+            }
         }
         
     }

@@ -4,7 +4,21 @@
 	.layer{
 		position:absolute;left:0;top: 50%;transform:translateY(-50%);z-index:2;width:100%;
 		@include boxSizing(border-box);
-		@include vw(padding, 0 65px);
+		@include vw(padding, 0 60px);
+
+		&#layerSuccess{
+			transform:translateY(-25%);
+			@include vw(padding, 0 160px);
+		}
+
+		&#layerFail{
+			transform:translateY(-27%);
+			@include vw(padding, 0 160px);
+		}
+
+		@include breakpoint(maxMobile){
+			@include vw(padding, 0 65px);
+		}
 
 		.layer-close{
 			position:relative;top:-1px;
@@ -22,7 +36,7 @@
 				.visual-group{
 					position:absolute;left:0;top:percent(80, 465);width:100%;text-align:center;
 					.visual-1{@include vw(width, 558px);margin:0 auto;}
-					.visual-2{@include vw(width, 576px);@include vw(margin, 40px auto 0);}
+					.visual-2{@include vw(width, 576px);@include vw(margin, 60px auto 0);}
 				}
 
 				.bubble-1{position:absolute;left:percent(30);top:percent(354, 465);@include vw(width, 210px);}
@@ -47,15 +61,27 @@
 			@include vw(padding, 60px 0);
 			background-color:#002bd7;
 
+			.img-event{
+				@include vw(padding, 0 60px);
+			}
+
 
 
 			.layer-input{
 				.btn-start{
-					display:block;background-color:#fbd800; @include vw(padding, 27px 0);color:#000;font-weight:700;
-					@include vw(font-size, 50px);
+					display:block;background-color:#fbd800; @include vw(height, 160px);color:#000;font-weight:700;
+					@include vw(font-size, 50px);@include vw(line-height, 160px);
 					@include breakpoint(maxMobile){
 						@include vw(font-size, 40px);
 					}
+				}
+
+				.text{
+					padding-top:0;
+					padding-bottom:0;
+					@include vw(height, 140px);
+					@include vw(line-height, 140px);
+					
 				}
 
 				.desc{
@@ -63,10 +89,10 @@
 					@include vw(margin-top, 60px);
 					@include vw(font-size, 30px);
 					font-style: normal;
-					font-weight: 700;
 					line-height: 1.5;
 					letter-spacing: 0em;
 					text-align: center;
+					font-family: $font-SamsungOne;
 					@include breakpoint(maxMobile){
 						@include vw(font-size, 24px);
 						margin-top:30px;
@@ -95,7 +121,8 @@
 
 					.btn-kakao{
 						display:block;
-						@include vw(margin-top, 40px);
+						@include vw(width, 410px);
+						@include vw(margin, 40px auto 0);
 	
 					}
 				}
@@ -134,10 +161,14 @@
 					color:#fff;
 					@include vw(font-size,36px);
 					font-style: normal;
-					font-weight: 400;
 					line-height: 1.5;
 					letter-spacing: 0em;
 					text-align: center;
+					font-family: $font-SamsungSharpSans;
+					strong{
+						font-weight: 700;
+					}
+					
 					@include breakpoint(maxMobile){
 						@include vw(font-size,30px);
 					}
@@ -160,9 +191,11 @@
 						letter-spacing: 0em;
 						text-align: left;
 						@include vw(padding-left,20px);
-						@include vw(text-indent,-20px);
+						@include vw(text-indent,-18px);
 						@include breakpoint(maxMobile){
 							@include vw(font-size,23px);
+							padding-left:15px;
+							text-indent:-15px;
 						}
 					}
 				}
@@ -185,22 +218,35 @@
 				@include vw(padding, 0 140px);
 				.layer-content{
 					background: #fff;
-					@include vw(padding, 60px 30px);
+					@include vw(padding, 60px 20px);
 
 					.layer-title{
 						color:#000;
 						@include vw(font-size, 24px);
 
+						
+
 						strong{
 							display:block;
 							@include vw(margin-bottom, 20px);
+							@include vw(font-size, 36px);						
+							text-align: center;
+							color: #000000;
+							span{position:relative;top:3px;display:inline-block;@include vw(width, 34px);@include vw(padding,0 10px);}
 						}
 					}
 				}
 
-				
-
-				
+				&#layerFail{
+					.layer-content{
+						.layer-title strong{
+							span{
+								padding:0;
+								@include vw(padding-left,10px);
+							}
+						}
+					}
+				}
 
 			}
 
@@ -469,7 +515,7 @@
 					}
 
 					.btn-start{
-						position:absolute;left:50%;top:50%;transform: translateX(-50%);
+						position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);
 						display:inline-block;background-color:#000;color:#fff;@include vw(width, 430px);@include vw(padding, 30px 0);
 						text-align:center;@include vw(border-radius, 90px);font-weight:700;@include vw(font-size, 60px);
 						@include breakpoint(maxMobile){

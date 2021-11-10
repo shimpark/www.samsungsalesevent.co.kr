@@ -70,3 +70,27 @@
     url("../fonts/SamsungOne-700.woff2") format("woff2"),
     url("../fonts/SamsungOne-700.woff") format("woff")
 }
+
+
+@font-face {
+    font-family: 'SamsungSharpSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Samsung Sharp Sans Regular'), url('../fonts/samsungsharpsans.woff') format('woff');
+}
+
+
+@font-face {
+    font-family:  'SamsungSharpSans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Samsung Sharp Sans Medium'), url('../fonts/samsungsharpsans-medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'SamsungSharpSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Samsung Sharp Sans Bold'), url('../fonts/samsungsharpsans-bold.woff') format('woff');
+}
