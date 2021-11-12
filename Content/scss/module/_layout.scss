@@ -18,6 +18,7 @@
            
         }
         .copyright{
+            font-family: $font-SamsungSharpSans;
             @include breakpoint(desktop){
                padding-right:10px;
             }

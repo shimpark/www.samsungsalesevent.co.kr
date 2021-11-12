@@ -2101,6 +2101,27 @@
   src: local("SamsungOne 700"), local("SamsungOne-700"), url("../fonts/SamsungOne-700.eot"), url("../fonts/SamsungOne-700.eot?#iefix") format("embedded-opentype"), url("../fonts/SamsungOne-700.woff2") format("woff2"), url("../fonts/SamsungOne-700.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'SamsungSharpSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Samsung Sharp Sans Regular"), url("../fonts/samsungsharpsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Samsung Sharp Sans Medium"), url("../fonts/samsungsharpsans-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Samsung Sharp Sans Bold"), url("../fonts/samsungsharpsans-bold.woff") format("woff");
+}
+
 html {
   overflow-x: hidden;
   -ms-text-size-adjust: 100%;
@@ -2202,6 +2223,10 @@ blockquote:before, blockquote:after {
 q:before, q:after {
   content: '';
   content: none;
+}
+
+html {
+  background-color: #002bd7;
 }
 
 #wrap {
@@ -2484,6 +2509,7 @@ q:before, q:after {
   font-weight: 400;
   padding: 6.66667vw 2.77778vw;
   text-align: center;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -2502,24 +2528,28 @@ q:before, q:after {
   color: #999999;
   font-weight: 400;
   font-size: 4.44444vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .form-control .text:-ms-input-placeholder {
   color: #999999;
   font-weight: 400;
   font-size: 4.44444vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .form-control .text::-ms-input-placeholder {
   color: #999999;
   font-weight: 400;
   font-size: 4.44444vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 #wrap .form-control .text::placeholder {
   color: #999999;
   font-weight: 400;
   font-size: 4.44444vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -2599,6 +2629,7 @@ q:before, q:after {
   resize: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -2795,6 +2826,7 @@ q:before, q:after {
   box-sizing: border-box;
   overflow-y: auto;
   margin-top: 1.38889vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -2873,7 +2905,7 @@ q:before, q:after {
   line-height: 1.4;
   color: #999999;
   padding-left: 2.5vw;
-  text-indent: -2.5vw;
+  text-indent: -1.94444vw;
 }
 
 @media screen and (min-width: 720px) {
@@ -2890,7 +2922,14 @@ q:before, q:after {
 
 @media screen and (min-width: 720px) {
   #wrap .notice-list li {
-    text-indent: -18px;
+    text-indent: -14px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .notice-list li {
+    padding-left: 13px;
+    text-indent: -13px;
   }
 }
 
@@ -3106,6 +3145,7 @@ q:before, q:after {
 #popupRequest .popup-cont {
   text-align: left;
   padding: 0 5.55556vw 8.33333vw;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -3135,15 +3175,28 @@ q:before, q:after {
 
 #popupRequest .popup-cont .form-list .form-text {
   width: 30%;
-  text-align: center;
+  text-align: left;
   margin-top: 0;
   color: #002BD7;
   font-size: 3.88889vw;
+  padding-left: 5.55556vw;
 }
 
 @media screen and (min-width: 720px) {
   #popupRequest .popup-cont .form-list .form-text {
     font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-text {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-text {
+    padding-left: 5%;
   }
 }
 
@@ -3153,7 +3206,7 @@ q:before, q:after {
   text-align: left;
   color: #000;
   padding: 4.72222vw 19.44444vw 4.72222vw 0;
-  font-size: 3.88889vw;
+  font-size: 5vw;
 }
 
 @media screen and (min-width: 720px) {
@@ -3164,42 +3217,84 @@ q:before, q:after {
 
 @media screen and (min-width: 720px) {
   #popupRequest .popup-cont .form-list .form-control .text {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
 #popupRequest .popup-cont .form-list .form-control .text::-webkit-input-placeholder {
-  font-size: 3.88889vw;
+  font-size: 5vw;
   color: #000;
 }
 
 #popupRequest .popup-cont .form-list .form-control .text:-ms-input-placeholder {
-  font-size: 3.88889vw;
+  font-size: 5vw;
   color: #000;
 }
 
 #popupRequest .popup-cont .form-list .form-control .text::-ms-input-placeholder {
-  font-size: 3.88889vw;
+  font-size: 5vw;
   color: #000;
 }
 
 #popupRequest .popup-cont .form-list .form-control .text::placeholder {
-  font-size: 3.88889vw;
+  font-size: 5vw;
   color: #000;
 }
 
 @media screen and (min-width: 720px) {
   #popupRequest .popup-cont .form-list .form-control .text::-webkit-input-placeholder {
-    font-size: 28px;
+    font-size: 36px;
   }
   #popupRequest .popup-cont .form-list .form-control .text:-ms-input-placeholder {
-    font-size: 28px;
+    font-size: 36px;
   }
   #popupRequest .popup-cont .form-list .form-control .text::-ms-input-placeholder {
-    font-size: 28px;
+    font-size: 36px;
   }
   #popupRequest .popup-cont .form-list .form-control .text::placeholder {
-    font-size: 28px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-control .text {
+    font-size: 4.44444vw;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-control .text {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-control .text::-webkit-input-placeholder {
+    font-size: 4.44444vw;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text:-ms-input-placeholder {
+    font-size: 4.44444vw;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text::-ms-input-placeholder {
+    font-size: 4.44444vw;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text::placeholder {
+    font-size: 4.44444vw;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-control .text::-webkit-input-placeholder {
+    font-size: 32px;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text:-ms-input-placeholder {
+    font-size: 32px;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text::-ms-input-placeholder {
+    font-size: 32px;
+  }
+  #popupRequest .popup-cont .form-list .form-control .text::placeholder {
+    font-size: 32px;
   }
 }
 
@@ -3210,12 +3305,24 @@ q:before, q:after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #002BD7;
-  font-size: 3.88889vw;
+  font-size: 5vw;
 }
 
 @media screen and (min-width: 720px) {
   #popupRequest .popup-cont .form-list .form-btn {
-    font-size: 28px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-btn {
+    font-size: 4.44444vw;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-width: 720px) {
+  #popupRequest .popup-cont .form-list .form-btn {
+    font-size: 32px;
   }
 }
 
@@ -3283,6 +3390,10 @@ q:before, q:after {
   }
 }
 
+#wrap footer .copyright {
+  font-family: "SamsungSharpSans", "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+}
+
 @media screen and (min-width: 1100px) {
   #wrap footer .copyright {
     padding-right: 10px;
@@ -3303,10 +3414,46 @@ q:before, q:after {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 9.02778vw;
+  padding: 0 8.33333vw;
 }
 
 @media screen and (min-width: 720px) {
+  #wrap .layer {
+    padding: 0 60px;
+  }
+}
+
+#wrap .layer#layerSuccess {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  padding: 0 22.22222vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .layer#layerSuccess {
+    padding: 0 160px;
+  }
+}
+
+#wrap .layer#layerFail {
+  -webkit-transform: translateY(-27%);
+          transform: translateY(-27%);
+  padding: 0 22.22222vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .layer#layerFail {
+    padding: 0 160px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .layer {
+    padding: 0 9.02778vw;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-width: 720px) {
   #wrap .layer {
     padding: 0 65px;
   }
@@ -3360,7 +3507,7 @@ q:before, q:after {
 
 #wrap .section-visual .visual-top .visual-group .visual-2 {
   width: 80vw;
-  margin: 5.55556vw auto 0;
+  margin: 8.33333vw auto 0;
 }
 
 @media screen and (min-width: 720px) {
@@ -3371,7 +3518,7 @@ q:before, q:after {
 
 @media screen and (min-width: 720px) {
   #wrap .section-visual .visual-top .visual-group .visual-2 {
-    margin: 40px auto 0;
+    margin: 60px auto 0;
   }
 }
 
@@ -3446,24 +3593,41 @@ q:before, q:after {
   }
 }
 
+#wrap .section-event-coupon .img-event {
+  padding: 0 8.33333vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-event-coupon .img-event {
+    padding: 0 60px;
+  }
+}
+
 #wrap .section-event-coupon .layer-input .btn-start {
   display: block;
   background-color: #fbd800;
-  padding: 3.75vw 0;
+  height: 22.22222vw;
   color: #000;
   font-weight: 700;
   font-size: 6.94444vw;
+  line-height: 22.22222vw;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-coupon .layer-input .btn-start {
-    padding: 27px 0;
+    height: 160px;
   }
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-coupon .layer-input .btn-start {
     font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-event-coupon .layer-input .btn-start {
+    line-height: 160px;
   }
 }
 
@@ -3479,15 +3643,34 @@ q:before, q:after {
   }
 }
 
+#wrap .section-event-coupon .layer-input .text {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 19.44444vw;
+  line-height: 19.44444vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-event-coupon .layer-input .text {
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-event-coupon .layer-input .text {
+    line-height: 140px;
+  }
+}
+
 #wrap .section-event-coupon .layer-input .desc {
   color: #fff;
   margin-top: 8.33333vw;
   font-size: 4.16667vw;
   font-style: normal;
-  font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
+  font-family: "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
@@ -3558,12 +3741,19 @@ q:before, q:after {
 
 #wrap .section-event-coupon .layer-login .layer-content .btn-kakao {
   display: block;
-  margin-top: 5.55556vw;
+  width: 56.94444vw;
+  margin: 5.55556vw auto 0;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-coupon .layer-login .layer-content .btn-kakao {
-    margin-top: 40px;
+    width: 410px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-event-coupon .layer-login .layer-content .btn-kakao {
+    margin: 40px auto 0;
   }
 }
 
@@ -3643,16 +3833,20 @@ q:before, q:after {
   color: #fff;
   font-size: 5vw;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: center;
+  font-family: "SamsungSharpSans", "SamsungOneKorean", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-info .event-content p {
     font-size: 36px;
   }
+}
+
+#wrap .section-event-info .event-content p strong {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 720px) {
@@ -3693,7 +3887,7 @@ q:before, q:after {
   letter-spacing: 0em;
   text-align: left;
   padding-left: 2.77778vw;
-  text-indent: -2.77778vw;
+  text-indent: -2.5vw;
 }
 
 @media screen and (min-width: 720px) {
@@ -3710,13 +3904,15 @@ q:before, q:after {
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-info .event-notice ul li {
-    text-indent: -20px;
+    text-indent: -18px;
   }
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-event-info .event-notice ul li {
     font-size: 3.19444vw;
+    padding-left: 15px;
+    text-indent: -15px;
   }
 }
 
@@ -3760,12 +3956,12 @@ q:before, q:after {
 
 #wrap .section-game .layer-game .layer-content {
   background: #fff;
-  padding: 8.33333vw 4.16667vw;
+  padding: 8.33333vw 2.77778vw;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-game .layer-game .layer-content {
-    padding: 60px 30px;
+    padding: 60px 20px;
   }
 }
 
@@ -3783,11 +3979,51 @@ q:before, q:after {
 #wrap .section-game .layer-game .layer-content .layer-title strong {
   display: block;
   margin-bottom: 2.77778vw;
+  font-size: 5vw;
+  text-align: center;
+  color: #000000;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-game .layer-game .layer-content .layer-title strong {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-game .layer-game .layer-content .layer-title strong {
+    font-size: 36px;
+  }
+}
+
+#wrap .section-game .layer-game .layer-content .layer-title strong span {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 4.72222vw;
+  padding: 0 1.38889vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-game .layer-game .layer-content .layer-title strong span {
+    width: 34px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-game .layer-game .layer-content .layer-title strong span {
+    padding: 0 10px;
+  }
+}
+
+#wrap .section-game .layer-game#layerFail .layer-content .layer-title strong span {
+  padding: 0;
+  padding-left: 1.38889vw;
+}
+
+@media screen and (min-width: 720px) {
+  #wrap .section-game .layer-game#layerFail .layer-content .layer-title strong span {
+    padding-left: 10px;
   }
 }
 
@@ -6581,8 +6817,8 @@ q:before, q:after {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: inline-block;
   background-color: #000;
   color: #fff;
