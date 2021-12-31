@@ -21,7 +21,8 @@ function onComplete(){
     TweenMax.fromTo( $(".visual-1"), 0.2, { opacity: 0, y:-50}, { opacity: 1, y:0, ease: Power0.easeOut});
     TweenMax.fromTo( $(".visual-2"), 0.2, { opacity: 0, scale:0.5}, { opacity: 1, scale:1,  delay:0.4,ease: Sine.easeOut});
     TweenMax.fromTo( $(".bubble-1"), 0.5, { opacity: 0, x:-30, y:-30}, { opacity: 1,  x:0, y:0, delay:0.5, ease: Bounce.easeOut});
-    TweenMax.fromTo( $(".bubble-2"), 0.5, { opacity: 0,  x:30, y:-30}, { opacity: 1, x:0, y:0,  delay:0.6,ease: Bounce.easeOut});
+    // TweenMax.fromTo( $(".bubble-2"), 0.5, { opacity: 0,  x:30, y:-30}, { opacity: 1, x:0, y:0,  delay:0.6,ease: Bounce.easeOut}) 211229 zoe 주석 ;
+    TweenMax.fromTo( $(".visual-text"), 0.2, { opacity: 0, scale:0.5}, { opacity: 1, scale:1,  delay:0.7,ease: Sine.easeOut}); // 211229 zoe 추가
 
 }
 

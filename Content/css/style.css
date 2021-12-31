@@ -3483,13 +3483,13 @@ html {
 }
 
 #wrap .section-visual .visual-top {
-  background-color: #ffe351;
+  background-color: #fff;
 }
 
 #wrap .section-visual .visual-top .visual-group {
   position: absolute;
   left: 0;
-  top: 17.2043%;
+  top: 7.5%;
   width: 100%;
   text-align: center;
 }
@@ -3506,13 +3506,13 @@ html {
 }
 
 #wrap .section-visual .visual-top .visual-group .visual-2 {
-  width: 80vw;
+  width: 80.55556vw;
   margin: 8.33333vw auto 0;
 }
 
 @media screen and (min-width: 720px) {
   #wrap .section-visual .visual-top .visual-group .visual-2 {
-    width: 576px;
+    width: 580px;
   }
 }
 
@@ -3524,49 +3524,32 @@ html {
 
 #wrap .section-visual .visual-top .bubble-1 {
   position: absolute;
-  left: 4.16667%;
-  top: 76.12903%;
-  width: 29.16667vw;
-}
-
-@media screen and (min-width: 720px) {
-  #wrap .section-visual .visual-top .bubble-1 {
-    width: 210px;
-  }
-}
-
-#wrap .section-visual .visual-top .bubble-2 {
-  position: absolute;
-  right: 3.33333%;
-  top: 77.41935%;
+  left: 2.77778%;
+  top: 43.75%;
   width: 32.77778vw;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .section-visual .visual-top .bubble-2 {
+  #wrap .section-visual .visual-top .bubble-1 {
     width: 236px;
   }
 }
 
-#wrap .section-visual .visual-bottom {
-  background-color: #fbd800;
-}
-
-#wrap .section-visual .visual-bottom .visual-text {
+#wrap .section-visual .visual-top .visual-text {
   position: absolute;
   left: 0;
-  bottom: 11.9403%;
+  bottom: 5%;
   width: 100%;
   text-align: center;
   font-weight: 400;
   font-size: 5vw;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
   color: #392020;
 }
 
 @media screen and (min-width: 720px) {
-  #wrap .section-visual .visual-bottom .visual-text {
+  #wrap .section-visual .visual-top .visual-text {
     font-size: 36px;
   }
 }
@@ -4028,7 +4011,7 @@ html {
 }
 
 #wrap .section-game .game-top {
-  background-color: #ffe351;
+  background-color: #fff;
 }
 
 #wrap .section-game .game-group {
