@@ -1,2 +1,2 @@
 # www.samsungsalesevent.co.kr
-# develop
+# developer
